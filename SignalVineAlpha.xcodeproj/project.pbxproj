@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3571D05247A000DB0EF /* AppDelegate.swift */; };
+		A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3591D05247A000DB0EF /* ViewController.swift */; };
+		A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE35B1D05247A000DB0EF /* Main.storyboard */; };
+		A7AEE3601D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE35E1D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld */; };
+		A7AEE3621D05247A000DB0EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE3611D05247A000DB0EF /* Assets.xcassets */; };
+		A7AEE3651D05247A000DB0EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE3631D05247A000DB0EF /* LaunchScreen.storyboard */; };
+		A7AEE3701D05247A000DB0EF /* SignalVineAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE36F1D05247A000DB0EF /* SignalVineAlphaTests.swift */; };
+		A7AEE37B1D05247A000DB0EF /* SignalVineAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE37A1D05247A000DB0EF /* SignalVineAlphaUITests.swift */; };
+		A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */; };
+		A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3961D053B92000DB0EF /* LoginViewController.swift */; };
+		A7AEE39B1D053B92000DB0EF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE3991D053B92000DB0EF /* LoginViewController.xib */; };
+		A7AEE39D1D053BAD000DB0EF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE39C1D053BAD000DB0EF /* SampleData.swift */; };
+		A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7AEE36C1D05247A000DB0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AEE34C1D05247A000DB0EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AEE3531D05247A000DB0EF;
+			remoteInfo = SignalVineAlpha;
+		};
+		A7AEE3771D05247A000DB0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7AEE34C1D05247A000DB0EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7AEE3531D05247A000DB0EF;
+			remoteInfo = SignalVineAlpha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7AEE3541D05247A000DB0EF /* SignalVineAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalVineAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AEE3571D05247A000DB0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7AEE3591D05247A000DB0EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7AEE35C1D05247A000DB0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7AEE35F1D05247A000DB0EF /* SignalVineAlpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SignalVineAlpha.xcdatamodel; sourceTree = "<group>"; };
+		A7AEE3611D05247A000DB0EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7AEE3641D05247A000DB0EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7AEE3661D05247A000DB0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AEE36B1D05247A000DB0EF /* SignalVineAlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalVineAlphaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AEE36F1D05247A000DB0EF /* SignalVineAlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalVineAlphaTests.swift; sourceTree = "<group>"; };
+		A7AEE3711D05247A000DB0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AEE3761D05247A000DB0EF /* SignalVineAlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignalVineAlphaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7AEE37A1D05247A000DB0EF /* SignalVineAlphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalVineAlphaUITests.swift; sourceTree = "<group>"; };
+		A7AEE37C1D05247A000DB0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginValidationClass.swift; sourceTree = "<group>"; };
+		A7AEE3961D053B92000DB0EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7AEE3991D053B92000DB0EF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A7AEE39C1D053BAD000DB0EF /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7AEE3511D05247A000DB0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3681D05247A000DB0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3731D05247A000DB0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7AEE34B1D05247A000DB0EF = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3561D05247A000DB0EF /* SignalVineAlpha */,
+				A7AEE36E1D05247A000DB0EF /* SignalVineAlphaTests */,
+				A7AEE3791D05247A000DB0EF /* SignalVineAlphaUITests */,
+				A7AEE3551D05247A000DB0EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7AEE3551D05247A000DB0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3541D05247A000DB0EF /* SignalVineAlpha.app */,
+				A7AEE36B1D05247A000DB0EF /* SignalVineAlphaTests.xctest */,
+				A7AEE3761D05247A000DB0EF /* SignalVineAlphaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7AEE3561D05247A000DB0EF /* SignalVineAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3571D05247A000DB0EF /* AppDelegate.swift */,
+				A7AEE3591D05247A000DB0EF /* ViewController.swift */,
+				A7AEE35B1D05247A000DB0EF /* Main.storyboard */,
+				A7AEE3951D053B92000DB0EF /* Controllers */,
+				A7AEE3971D053B92000DB0EF /* Models */,
+				A7AEE3981D053B92000DB0EF /* Views */,
+				A7AEE3921D052978000DB0EF /* Library */,
+				A7AEE3611D05247A000DB0EF /* Assets.xcassets */,
+				A7AEE3631D05247A000DB0EF /* LaunchScreen.storyboard */,
+				A7AEE3661D05247A000DB0EF /* Info.plist */,
+				A7AEE35E1D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld */,
+			);
+			path = SignalVineAlpha;
+			sourceTree = "<group>";
+		};
+		A7AEE36E1D05247A000DB0EF /* SignalVineAlphaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE36F1D05247A000DB0EF /* SignalVineAlphaTests.swift */,
+				A7AEE3711D05247A000DB0EF /* Info.plist */,
+			);
+			path = SignalVineAlphaTests;
+			sourceTree = "<group>";
+		};
+		A7AEE3791D05247A000DB0EF /* SignalVineAlphaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE37A1D05247A000DB0EF /* SignalVineAlphaUITests.swift */,
+				A7AEE37C1D05247A000DB0EF /* Info.plist */,
+			);
+			path = SignalVineAlphaUITests;
+			sourceTree = "<group>";
+		};
+		A7AEE3921D052978000DB0EF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A7AEE3951D053B92000DB0EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3961D053B92000DB0EF /* LoginViewController.swift */,
+				A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7AEE3971D053B92000DB0EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE39C1D053BAD000DB0EF /* SampleData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7AEE3981D053B92000DB0EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7AEE3991D053B92000DB0EF /* LoginViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7AEE3531D05247A000DB0EF /* SignalVineAlpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AEE37F1D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlpha" */;
+			buildPhases = (
+				A7AEE3501D05247A000DB0EF /* Sources */,
+				A7AEE3511D05247A000DB0EF /* Frameworks */,
+				A7AEE3521D05247A000DB0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignalVineAlpha;
+			productName = SignalVineAlpha;
+			productReference = A7AEE3541D05247A000DB0EF /* SignalVineAlpha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7AEE36A1D05247A000DB0EF /* SignalVineAlphaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AEE3821D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlphaTests" */;
+			buildPhases = (
+				A7AEE3671D05247A000DB0EF /* Sources */,
+				A7AEE3681D05247A000DB0EF /* Frameworks */,
+				A7AEE3691D05247A000DB0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AEE36D1D05247A000DB0EF /* PBXTargetDependency */,
+			);
+			name = SignalVineAlphaTests;
+			productName = SignalVineAlphaTests;
+			productReference = A7AEE36B1D05247A000DB0EF /* SignalVineAlphaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7AEE3751D05247A000DB0EF /* SignalVineAlphaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7AEE3851D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlphaUITests" */;
+			buildPhases = (
+				A7AEE3721D05247A000DB0EF /* Sources */,
+				A7AEE3731D05247A000DB0EF /* Frameworks */,
+				A7AEE3741D05247A000DB0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7AEE3781D05247A000DB0EF /* PBXTargetDependency */,
+			);
+			name = SignalVineAlphaUITests;
+			productName = SignalVineAlphaUITests;
+			productReference = A7AEE3761D05247A000DB0EF /* SignalVineAlphaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7AEE34C1D05247A000DB0EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Habagat Reyes";
+				TargetAttributes = {
+					A7AEE3531D05247A000DB0EF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A7AEE36A1D05247A000DB0EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7AEE3531D05247A000DB0EF;
+					};
+					A7AEE3751D05247A000DB0EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7AEE3531D05247A000DB0EF;
+					};
+				};
+			};
+			buildConfigurationList = A7AEE34F1D05247A000DB0EF /* Build configuration list for PBXProject "SignalVineAlpha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7AEE34B1D05247A000DB0EF;
+			productRefGroup = A7AEE3551D05247A000DB0EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7AEE3531D05247A000DB0EF /* SignalVineAlpha */,
+				A7AEE36A1D05247A000DB0EF /* SignalVineAlphaTests */,
+				A7AEE3751D05247A000DB0EF /* SignalVineAlphaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7AEE3521D05247A000DB0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AEE39B1D053B92000DB0EF /* LoginViewController.xib in Resources */,
+				A7AEE3651D05247A000DB0EF /* LaunchScreen.storyboard in Resources */,
+				A7AEE3621D05247A000DB0EF /* Assets.xcassets in Resources */,
+				A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3691D05247A000DB0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3741D05247A000DB0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7AEE3501D05247A000DB0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */,
+				A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */,
+				A7AEE39D1D053BAD000DB0EF /* SampleData.swift in Sources */,
+				A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */,
+				A7AEE3601D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld in Sources */,
+				A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */,
+				A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3671D05247A000DB0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AEE3701D05247A000DB0EF /* SignalVineAlphaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7AEE3721D05247A000DB0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7AEE37B1D05247A000DB0EF /* SignalVineAlphaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7AEE36D1D05247A000DB0EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AEE3531D05247A000DB0EF /* SignalVineAlpha */;
+			targetProxy = A7AEE36C1D05247A000DB0EF /* PBXContainerItemProxy */;
+		};
+		A7AEE3781D05247A000DB0EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7AEE3531D05247A000DB0EF /* SignalVineAlpha */;
+			targetProxy = A7AEE3771D05247A000DB0EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7AEE35B1D05247A000DB0EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AEE35C1D05247A000DB0EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7AEE3631D05247A000DB0EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7AEE3641D05247A000DB0EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7AEE37D1D05247A000DB0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7AEE37E1D05247A000DB0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7AEE3801D05247A000DB0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7AEE3811D05247A000DB0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7AEE3831D05247A000DB0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SignalVineAlphaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlphaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignalVineAlpha.app/SignalVineAlpha";
+			};
+			name = Debug;
+		};
+		A7AEE3841D05247A000DB0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SignalVineAlphaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlphaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignalVineAlpha.app/SignalVineAlpha";
+			};
+			name = Release;
+		};
+		A7AEE3861D05247A000DB0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SignalVineAlphaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlphaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SignalVineAlpha;
+			};
+			name = Debug;
+		};
+		A7AEE3871D05247A000DB0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SignalVineAlphaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlphaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SignalVineAlpha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7AEE34F1D05247A000DB0EF /* Build configuration list for PBXProject "SignalVineAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AEE37D1D05247A000DB0EF /* Debug */,
+				A7AEE37E1D05247A000DB0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AEE37F1D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AEE3801D05247A000DB0EF /* Debug */,
+				A7AEE3811D05247A000DB0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AEE3821D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlphaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AEE3831D05247A000DB0EF /* Debug */,
+				A7AEE3841D05247A000DB0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7AEE3851D05247A000DB0EF /* Build configuration list for PBXNativeTarget "SignalVineAlphaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7AEE3861D05247A000DB0EF /* Debug */,
+				A7AEE3871D05247A000DB0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7AEE35E1D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7AEE35F1D05247A000DB0EF /* SignalVineAlpha.xcdatamodel */,
+			);
+			currentVersion = A7AEE35F1D05247A000DB0EF /* SignalVineAlpha.xcdatamodel */;
+			path = SignalVineAlpha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A7AEE34C1D05247A000DB0EF /* Project object */;
+}
