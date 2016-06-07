@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A73C5B411D065A3F00F18786 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; };
-		A73C5B421D065A3F00F18786 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73C5B471D065BB300F18786 /* RequestsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73C5B461D065BB300F18786 /* RequestsClass.swift */; };
+		A73C5B4D1D065DFD00F18786 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; };
+		A73C5B4E1D065DFD00F18786 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */; };
+		A73C5B571D066DF000F18786 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73C5B561D066DF000F18786 /* Login.storyboard */; };
 		A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3571D05247A000DB0EF /* AppDelegate.swift */; };
 		A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3591D05247A000DB0EF /* ViewController.swift */; };
 		A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE35B1D05247A000DB0EF /* Main.storyboard */; };
@@ -74,7 +77,7 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
-		A73C5B431D065A3F00F18786 /* PBXContainerItemProxy */ = {
+		A73C5B4F1D065DFD00F18786 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A73C5B291D0657E600F18786 /* Alamofire.xcodeproj */;
 			proxyType = 1;
@@ -98,13 +101,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A73C5B451D065A3F00F18786 /* Embed Frameworks */ = {
+		A73C5B511D065DFD00F18786 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A73C5B421D065A3F00F18786 /* Alamofire.framework in Embed Frameworks */,
+				A73C5B4E1D065DFD00F18786 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +116,10 @@
 
 /* Begin PBXFileReference section */
 		A73C5B291D0657E600F18786 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A73C5B461D065BB300F18786 /* RequestsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsClass.swift; sourceTree = "<group>"; };
+		A73C5B531D06698D00F18786 /* SignalVineAlpha-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalVineAlpha-Bridging-Header.h"; sourceTree = "<group>"; };
+		A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveBridgeHeader.m; sourceTree = "<group>"; };
+		A73C5B561D066DF000F18786 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A7AEE3541D05247A000DB0EF /* SignalVineAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalVineAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AEE3571D05247A000DB0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AEE3591D05247A000DB0EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A73C5B411D065A3F00F18786 /* Alamofire.framework in Frameworks */,
+				A73C5B4D1D065DFD00F18786 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +207,7 @@
 				A7AEE3571D05247A000DB0EF /* AppDelegate.swift */,
 				A7AEE3591D05247A000DB0EF /* ViewController.swift */,
 				A7AEE35B1D05247A000DB0EF /* Main.storyboard */,
+				A73C5B561D066DF000F18786 /* Login.storyboard */,
 				A7AEE3951D053B92000DB0EF /* Controllers */,
 				A7AEE3971D053B92000DB0EF /* Models */,
 				A7AEE3981D053B92000DB0EF /* Views */,
@@ -208,6 +216,8 @@
 				A7AEE3631D05247A000DB0EF /* LaunchScreen.storyboard */,
 				A7AEE3661D05247A000DB0EF /* Info.plist */,
 				A7AEE35E1D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld */,
+				A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */,
+				A73C5B531D06698D00F18786 /* SignalVineAlpha-Bridging-Header.h */,
 			);
 			path = SignalVineAlpha;
 			sourceTree = "<group>";
@@ -235,6 +245,7 @@
 			children = (
 				A73C5B291D0657E600F18786 /* Alamofire.xcodeproj */,
 				A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */,
+				A73C5B461D065BB300F18786 /* RequestsClass.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -274,12 +285,12 @@
 				A7AEE3501D05247A000DB0EF /* Sources */,
 				A7AEE3511D05247A000DB0EF /* Frameworks */,
 				A7AEE3521D05247A000DB0EF /* Resources */,
-				A73C5B451D065A3F00F18786 /* Embed Frameworks */,
+				A73C5B511D065DFD00F18786 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A73C5B441D065A3F00F18786 /* PBXTargetDependency */,
+				A73C5B501D065DFD00F18786 /* PBXTargetDependency */,
 			);
 			name = SignalVineAlpha;
 			productName = SignalVineAlpha;
@@ -431,6 +442,7 @@
 				A7AEE39B1D053B92000DB0EF /* LoginViewController.xib in Resources */,
 				A7AEE3651D05247A000DB0EF /* LaunchScreen.storyboard in Resources */,
 				A7AEE3621D05247A000DB0EF /* Assets.xcassets in Resources */,
+				A73C5B571D066DF000F18786 /* Login.storyboard in Resources */,
 				A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,11 +468,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73C5B471D065BB300F18786 /* RequestsClass.swift in Sources */,
 				A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */,
 				A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */,
 				A7AEE39D1D053BAD000DB0EF /* SampleData.swift in Sources */,
 				A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */,
 				A7AEE3601D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld in Sources */,
+				A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */,
 				A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */,
 				A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */,
 			);
@@ -485,10 +499,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A73C5B441D065A3F00F18786 /* PBXTargetDependency */ = {
+		A73C5B501D065DFD00F18786 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire iOS";
-			targetProxy = A73C5B431D065A3F00F18786 /* PBXContainerItemProxy */;
+			targetProxy = A73C5B4F1D065DFD00F18786 /* PBXContainerItemProxy */;
 		};
 		A7AEE36D1D05247A000DB0EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -611,12 +625,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignalVineAlpha/SignalVineAlpha-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -624,12 +641,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SignalVineAlpha/SignalVineAlpha-Bridging-Header.h";
 			};
 			name = Release;
 		};

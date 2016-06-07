@@ -10,6 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var signginBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,19 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func signIn(sender: AnyObject) {
+        
+    }
+    
+    
+    private func showAlert(alertTitle: String, alertMessage: String){
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alert.addAction(defaultAction)
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,15 +8,40 @@
 
 import UIKit
 import CoreData
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let urlRequests = RequestsClass()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Sets the window bounds to make sure the xibs is in full screen
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // Do validation here
+        let loggedIn = false
+        
+        //Do handshake
+        urlRequests.signalvineHandshake()
+
+        
+        // Set which storyboard to load - get main storyboard name
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let login = UIStoryboard(name: "Login", bundle: nil)
+        
+        var initialViewController: UIViewController?
+        
+        // Let choose will controller to load here
+        if loggedIn {
+            initialViewController = main.instantiateViewControllerWithIdentifier("mainViewController")
+        }else{
+            initialViewController = login.instantiateViewControllerWithIdentifier("loginViewController")
+        }
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
