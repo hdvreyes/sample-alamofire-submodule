@@ -29,6 +29,29 @@ class RequestsClass: NSObject {
         
     }
     
+    func sendMagicLinkPost(email:String){
+        
+        let parameters = ["email": email]
+        
+        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+            .responseJSON{ response in
+                
+                print(response.request)
+                print(response.response)
+                print(response.data)
+                print(response.result)
+                
+        }
+    }
+    
+    func login(email:String, password:String)->String?{
+        
+        let response = "Logged In"
+        
+        return response
+        
+    }
+    
     func shaEnc256(token: String?, secret: String?) -> String?
     {
 //        let unprocessed = "\(secret)\(token)"

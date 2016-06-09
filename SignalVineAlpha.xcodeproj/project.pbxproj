@@ -12,6 +12,14 @@
 		A73C5B4E1D065DFD00F18786 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */; };
 		A73C5B571D066DF000F18786 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73C5B561D066DF000F18786 /* Login.storyboard */; };
+		A7A966CB1D07AA0800ED55D4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966C91D07AA0800ED55D4 /* Home.storyboard */; };
+		A7A966D31D07AA1F00ED55D4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D21D07AA1F00ED55D4 /* Search.storyboard */; };
+		A7A966D61D07ACEA00ED55D4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D41D07ACEA00ED55D4 /* Profile.storyboard */; };
+		A7A966D81D07C09300ED55D4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */; };
+		A7A966DA1D07D14200ED55D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966D91D07D14200ED55D4 /* HomeViewController.swift */; };
+		A7A966DC1D07D24000ED55D4 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966DB1D07D24000ED55D4 /* NavigationView.swift */; };
+		A7A966DE1D07E0C400ED55D4 /* RequestForLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */; };
+		A7AAD8C11D08DC2B00508838 /* LinkSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AAD8C01D08DC2B00508838 /* LinkSentViewController.swift */; };
 		A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3571D05247A000DB0EF /* AppDelegate.swift */; };
 		A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3591D05247A000DB0EF /* ViewController.swift */; };
 		A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE35B1D05247A000DB0EF /* Main.storyboard */; };
@@ -22,9 +30,9 @@
 		A7AEE37B1D05247A000DB0EF /* SignalVineAlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE37A1D05247A000DB0EF /* SignalVineAlphaUITests.swift */; };
 		A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */; };
 		A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE3961D053B92000DB0EF /* LoginViewController.swift */; };
-		A7AEE39B1D053B92000DB0EF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7AEE3991D053B92000DB0EF /* LoginViewController.xib */; };
 		A7AEE39D1D053BAD000DB0EF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE39C1D053BAD000DB0EF /* SampleData.swift */; };
 		A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */; };
+		A7F4E92A1D067C3A00B57B70 /* UIClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4E9291D067C3A00B57B70 /* UIClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,14 @@
 		A73C5B531D06698D00F18786 /* SignalVineAlpha-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalVineAlpha-Bridging-Header.h"; sourceTree = "<group>"; };
 		A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveBridgeHeader.m; sourceTree = "<group>"; };
 		A73C5B561D066DF000F18786 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A7A966CA1D07AA0800ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		A7A966D21D07AA1F00ED55D4 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A7A966D51D07ACEA00ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		A7A966D91D07D14200ED55D4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7A966DB1D07D24000ED55D4 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestForLink.swift; sourceTree = "<group>"; };
+		A7AAD8C01D08DC2B00508838 /* LinkSentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkSentViewController.swift; sourceTree = "<group>"; };
 		A7AEE3541D05247A000DB0EF /* SignalVineAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalVineAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7AEE3571D05247A000DB0EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7AEE3591D05247A000DB0EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,9 +152,9 @@
 		A7AEE37C1D05247A000DB0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginValidationClass.swift; sourceTree = "<group>"; };
 		A7AEE3961D053B92000DB0EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		A7AEE3991D053B92000DB0EF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A7AEE39C1D053BAD000DB0EF /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A7F4E9291D067C3A00B57B70 /* UIClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +223,9 @@
 				A7AEE3571D05247A000DB0EF /* AppDelegate.swift */,
 				A7AEE3591D05247A000DB0EF /* ViewController.swift */,
 				A7AEE35B1D05247A000DB0EF /* Main.storyboard */,
+				A7A966D41D07ACEA00ED55D4 /* Profile.storyboard */,
+				A7A966D21D07AA1F00ED55D4 /* Search.storyboard */,
+				A7A966C91D07AA0800ED55D4 /* Home.storyboard */,
 				A73C5B561D066DF000F18786 /* Login.storyboard */,
 				A7AEE3951D053B92000DB0EF /* Controllers */,
 				A7AEE3971D053B92000DB0EF /* Models */,
@@ -246,6 +265,7 @@
 				A73C5B291D0657E600F18786 /* Alamofire.xcodeproj */,
 				A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */,
 				A73C5B461D065BB300F18786 /* RequestsClass.swift */,
+				A7F4E9291D067C3A00B57B70 /* UIClass.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -255,6 +275,10 @@
 			children = (
 				A7AEE3961D053B92000DB0EF /* LoginViewController.swift */,
 				A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */,
+				A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */,
+				A7A966D91D07D14200ED55D4 /* HomeViewController.swift */,
+				A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */,
+				A7AAD8C01D08DC2B00508838 /* LinkSentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,7 +294,7 @@
 		A7AEE3981D053B92000DB0EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7AEE3991D053B92000DB0EF /* LoginViewController.xib */,
+				A7A966DB1D07D24000ED55D4 /* NavigationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +369,7 @@
 				TargetAttributes = {
 					A7AEE3531D05247A000DB0EF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = H29N4FZTG9;
 					};
 					A7AEE36A1D05247A000DB0EF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -439,9 +464,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7AEE39B1D053B92000DB0EF /* LoginViewController.xib in Resources */,
 				A7AEE3651D05247A000DB0EF /* LaunchScreen.storyboard in Resources */,
+				A7A966D61D07ACEA00ED55D4 /* Profile.storyboard in Resources */,
 				A7AEE3621D05247A000DB0EF /* Assets.xcassets in Resources */,
+				A7A966CB1D07AA0800ED55D4 /* Home.storyboard in Resources */,
+				A7A966D31D07AA1F00ED55D4 /* Search.storyboard in Resources */,
 				A73C5B571D066DF000F18786 /* Login.storyboard in Resources */,
 				A7AEE35D1D05247A000DB0EF /* Main.storyboard in Resources */,
 			);
@@ -468,15 +495,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A966D81D07C09300ED55D4 /* CustomNavigationController.swift in Sources */,
 				A73C5B471D065BB300F18786 /* RequestsClass.swift in Sources */,
 				A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */,
 				A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */,
 				A7AEE39D1D053BAD000DB0EF /* SampleData.swift in Sources */,
 				A7AEE3581D05247A000DB0EF /* AppDelegate.swift in Sources */,
 				A7AEE3601D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld in Sources */,
+				A7F4E92A1D067C3A00B57B70 /* UIClass.swift in Sources */,
 				A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */,
+				A7A966DC1D07D24000ED55D4 /* NavigationView.swift in Sources */,
 				A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */,
 				A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */,
+				A7A966DA1D07D14200ED55D4 /* HomeViewController.swift in Sources */,
+				A7A966DE1D07E0C400ED55D4 /* RequestForLink.swift in Sources */,
+				A7AAD8C11D08DC2B00508838 /* LinkSentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +550,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A7A966C91D07AA0800ED55D4 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A966CA1D07AA0800ED55D4 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		A7A966D41D07ACEA00ED55D4 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A966D51D07ACEA00ED55D4 /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
 		A7AEE35B1D05247A000DB0EF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -626,9 +675,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -642,9 +692,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.SignalVineAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,26 +1,34 @@
 //
-//  MainViewController.swift
+//  HomeViewController.swift
 //  SignalVineAlpha
 //
-//  Created by Habagat Reyes on 06/06/2016.
+//  Created by Habagat Reyes on 08/06/2016.
 //  Copyright © 2016 Habagat Reyes. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UITabBarController {
-
+class HomeViewController: UIViewController {
     
-    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        //tabBarItem = UITabBarItem(title:"Test", image: nil, tag: 1)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("set tab here")
-        //self.tabBarItem = UITabBarItem(tabBarSystemItem:"", tag: 1)
-        //tabBar.setItems([tabBarItem], animated: false)
-        //tabBar.barTintColor = UIColor.redColor()
-        //self.tabBarController?.tabBarItem = UITabBarItem(title:"", image: UIImage(named: "profile-icon"), tag: 1)
+
         // Do any additional setup after loading the view.
+
+        //self.navigationView.setNavigation((self.navigationController?.navigationBar)!)
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let gToken = appDelegate.globalToken
         
+    }
+
+    private func test() {
+        print("out")
+
     }
     
     override func didReceiveMemoryWarning() {

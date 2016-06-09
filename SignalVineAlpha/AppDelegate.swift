@@ -14,6 +14,7 @@ import Alamofire
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var globalToken: String?
     let urlRequests = RequestsClass()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -22,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Do validation here
-        let loggedIn = false
+        let loggedIn = true
         
         //Do handshake
         urlRequests.signalvineHandshake()
@@ -38,13 +39,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if loggedIn {
             initialViewController = main.instantiateViewControllerWithIdentifier("mainViewController")
         }else{
-            initialViewController = login.instantiateViewControllerWithIdentifier("loginViewController")
+            //linkSentView
+            //requestForLink
+            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
         }
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         return true
     }
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+
+        // Sets the window bounds to make sure the xibs is in full screen
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // Do validation here
+        let loggedIn = true
+        
+        //Do handshake
+        urlRequests.signalvineHandshake()
+        
+        
+        // Set which storyboard to load - get main storyboard name
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let login = UIStoryboard(name: "Login", bundle: nil)
+        
+        var initialViewController: UIViewController?
+        
+        // Let choose will controller to load here
+        if loggedIn {
+            globalToken = "ArDgS1JdksahsdyTA5kkcasahs9Adasmc"
+            initialViewController = main.instantiateViewControllerWithIdentifier("mainViewController")
+        }else{
+            //linkSentView
+            //requestForLink
+            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
+        }
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
+        
+        print(sourceApplication!)
+        print(url.scheme)
+        print(url.query!)
+        return true
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

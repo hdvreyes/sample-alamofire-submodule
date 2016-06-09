@@ -1,26 +1,27 @@
 //
-//  MainViewController.swift
+//  CustomNavigationController.swift
 //  SignalVineAlpha
 //
-//  Created by Habagat Reyes on 06/06/2016.
+//  Created by Habagat Reyes on 08/06/2016.
 //  Copyright © 2016 Habagat Reyes. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UITabBarController {
+class CustomNavigationController: UINavigationController {
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("set tab here")
-        //self.tabBarItem = UITabBarItem(tabBarSystemItem:"", tag: 1)
-        //tabBar.setItems([tabBarItem], animated: false)
-        //tabBar.barTintColor = UIColor.redColor()
-        //self.tabBarController?.tabBarItem = UITabBarItem(title:"", image: UIImage(named: "profile-icon"), tag: 1)
+
         // Do any additional setup after loading the view.
+        print("Trigger")
+//        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector(test()))
         
+    }
+
+    private func test(){
+    
     }
     
     override func didReceiveMemoryWarning() {
