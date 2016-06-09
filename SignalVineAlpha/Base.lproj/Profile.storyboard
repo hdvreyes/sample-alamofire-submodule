@@ -23,11 +23,14 @@
             </objects>
             <point key="canvasLocation" x="1789" y="412"/>
         </scene>
-        <!--Item-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="RzA-Fk-k1a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gtf-aj-Dcj" customClass="CustomNavigationController" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="z3e-fR-b04"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="" image="user-icon" selectedImage="user-icon" id="z3e-fR-b04">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="2" maxY="-1"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Qj-FM-hJU">
@@ -44,4 +47,7 @@
             <point key="canvasLocation" x="977" y="412"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user-icon" width="32" height="32"/>
+    </resources>
 </document>

@@ -27,6 +27,7 @@
         <!--Root View Controller-->
         <scene sceneID="FGV-Gr-5np">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAL-ho-7Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="XUX-if-NpN" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6KW-Nj-wHg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -49,7 +50,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="XfA-QP-XJH"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dAL-ho-7Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1607" y="-551"/>
         </scene>
@@ -57,7 +57,7 @@
         <scene sceneID="5qo-KV-3sN">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="Oi6-fX-XaG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="" image="message-icon" selectedImage="message-icon" id="FA6-vc-vzX"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="message-icon" id="FA6-vc-vzX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEx-dX-De3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +71,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzg-4A-xU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548.5" y="412"/>
+            <point key="canvasLocation" x="21.5" y="491"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Q1V-bs-U2Y">

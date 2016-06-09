@@ -37,11 +37,14 @@
             </objects>
             <point key="canvasLocation" x="1807" y="-282"/>
         </scene>
-        <!--Item 1-->
+        <!--Navigation View-->
         <scene sceneID="xb9-qI-IWd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ji-Ya-N1y" customClass="NavigationView" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="P8F-rZ-3qR"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="message-icon" selectedImage="message-icon" id="P8F-rZ-3qR">
+                        <inset key="imageInsets" minX="1" minY="0.0" maxX="-2" maxY="-3"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vSE-r1-3jY">
@@ -58,4 +61,7 @@
             <point key="canvasLocation" x="995" y="-282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="message-icon" width="32" height="32"/>
+    </resources>
 </document>

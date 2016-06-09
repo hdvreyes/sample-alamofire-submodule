@@ -31,11 +31,14 @@
             </objects>
             <point key="canvasLocation" x="1807" y="379"/>
         </scene>
-        <!--Item 2-->
+        <!--Custom Navigation Controller-->
         <scene sceneID="oyh-qt-AH5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gIF-5n-PiV" customClass="CustomNavigationController" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="D59-nb-4gb"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="search-icon" selectedImage="search-icon" id="D59-nb-4gb">
+                        <inset key="imageInsets" minX="1" minY="3" maxX="-2" maxY="-3"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVR-cx-0RB">
@@ -52,4 +55,7 @@
             <point key="canvasLocation" x="995" y="379"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="search-icon" width="32" height="32"/>
+    </resources>
 </document>

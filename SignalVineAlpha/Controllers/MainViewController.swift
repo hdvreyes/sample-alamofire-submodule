@@ -20,7 +20,9 @@ class MainViewController: UITabBarController {
         //tabBar.barTintColor = UIColor.redColor()
         //self.tabBarController?.tabBarItem = UITabBarItem(title:"", image: UIImage(named: "profile-icon"), tag: 1)
         // Do any additional setup after loading the view.
-        
+        //tabBar.barTintColor = UIColor.redColor()
+        self.tabBarItem = UITabBarItem(title: "Test", image: UIImage(named: "message-icon"), tag:1)
+//        print(self.tabBarItem.tag)
     }
     
     override func didReceiveMemoryWarning() {
