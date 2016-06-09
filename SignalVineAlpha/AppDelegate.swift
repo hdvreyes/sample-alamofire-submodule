@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var globalToken: String?
+    var globalSecret: String?
+    
     let urlRequests = RequestsClass()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -23,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Do validation here
-        let loggedIn = true
+        let loggedIn = false
         
         //Do handshake
         urlRequests.signalvineHandshake()
@@ -41,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             //linkSentView
             //requestForLink
-            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
+            initialViewController = login.instantiateViewControllerWithIdentifier("linkSentView")
         }
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
@@ -68,7 +70,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Let choose will controller to load here
         if loggedIn {
-            globalToken = "ArDgS1JdksahsdyTA5kkcasahs9Adasmc"
+            //globalToken = "ArDgS1JdksahsdyTA5kkcasahs9Adasmc"
+            
+            print(sourceApplication!)
+            print(url.scheme)
+            let uriSegment = url.query?.componentsSeparatedByString("&")
+            
+            for uri in uriSegment! {
+                
+                if uri.containsString("token") {
+                    let token = uri.componentsSeparatedByString("=")
+                    globalToken = token[1]
+                    
+                }
+                if uri.containsString("secret") {
+                    let secret = uri.componentsSeparatedByString("=")
+                    globalSecret = secret[1]
+                }
+                if uri.containsString("isLoggedIn") {
+                    let isLoggedIn = uri.componentsSeparatedByString("=")
+                    //loggedIn = isLoggedIn[1]
+                }
+                
+            }
+            print("\(globalToken)-\(globalSecret)")
+
+            
             initialViewController = main.instantiateViewControllerWithIdentifier("mainViewController")
         }else{
             //linkSentView
@@ -79,9 +106,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         
-        print(sourceApplication!)
-        print(url.scheme)
-        print(url.query!)
         return true
     }
     

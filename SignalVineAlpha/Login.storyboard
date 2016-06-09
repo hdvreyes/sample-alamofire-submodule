@@ -60,7 +60,7 @@
                                                     <fragment content="MAGIC LINK SENT!">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -78,14 +78,14 @@
 </string>
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="magic link that will sign you in.">
                                                         <attributes>
                                                             <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -143,6 +143,7 @@
                     <connections>
                         <outlet property="appLinkBtn" destination="K74-S6-hNe" id="ejM-GB-84n"/>
                         <outlet property="bodyContainer" destination="56J-dk-XXm" id="cZQ-nv-1pK"/>
+                        <outlet property="linkSentHeading" destination="q56-q7-boQ" id="lwD-Bm-2GF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzq-gg-eFf" userLabel="First Responder" sceneMemberID="firstResponder"/>

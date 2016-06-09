@@ -16,14 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7el-fN-yqA">
-                                <rect key="frame" x="282" y="289" width="54" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixN-Cd-Xtu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7el-fN-yqA">
+                                        <rect key="frame" x="236" y="165" width="129" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="aJG-cK-AC9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7el-fN-yqA" firstAttribute="top" secondItem="ixN-Cd-Xtu" secondAttribute="top" constant="165" id="Bgn-Am-lkR"/>
+                                    <constraint firstAttribute="bottom" secondItem="7el-fN-yqA" secondAttribute="bottom" constant="414" id="SBY-rK-whY"/>
+                                    <constraint firstItem="7el-fN-yqA" firstAttribute="centerX" secondItem="ixN-Cd-Xtu" secondAttribute="centerX" id="yb7-Mg-yHw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ixN-Cd-Xtu" secondAttribute="bottom" id="1gJ-bZ-iI9"/>
+                            <constraint firstItem="ixN-Cd-Xtu" firstAttribute="top" secondItem="o2n-Ym-NoQ" secondAttribute="top" id="Rgi-hx-fo2"/>
+                            <constraint firstItem="ixN-Cd-Xtu" firstAttribute="leading" secondItem="o2n-Ym-NoQ" secondAttribute="leading" id="eSU-ef-ZnK"/>
+                            <constraint firstAttribute="trailing" secondItem="ixN-Cd-Xtu" secondAttribute="trailing" id="hxQ-gI-BkR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w8T-Cy-jvQ"/>
                 </viewController>
@@ -31,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1807" y="379"/>
         </scene>
-        <!--Custom Navigation Controller-->
+        <!--Navigation View-->
         <scene sceneID="oyh-qt-AH5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gIF-5n-PiV" customClass="CustomNavigationController" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gIF-5n-PiV" customClass="NavigationView" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="" image="search-icon" selectedImage="search-icon" id="D59-nb-4gb">
                         <inset key="imageInsets" minX="1" minY="3" maxX="-2" maxY="-3"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>

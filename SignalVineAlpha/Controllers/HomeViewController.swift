@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var token: UILabel!
+    @IBOutlet weak var secret: UILabel!
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         //tabBarItem = UITabBarItem(title:"Test", image: nil, tag: 1)
@@ -23,6 +25,10 @@ class HomeViewController: UIViewController {
         //self.navigationView.setNavigation((self.navigationController?.navigationBar)!)
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let gToken = appDelegate.globalToken
+        let gSecret = appDelegate.globalSecret
+       
+        token.text = "Token: \(gToken)"
+        secret.text = "Secret: \(gSecret)"
         
     }
 

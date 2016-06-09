@@ -12,6 +12,7 @@ class LinkSentViewController: UIViewController {
 
     @IBOutlet weak var bodyContainer: UIView!
     @IBOutlet weak var appLinkBtn: UIButton!
+    @IBOutlet weak var linkSentHeading: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,17 @@ class LinkSentViewController: UIViewController {
         // Sets the button property
         self.appLinkBtn.backgroundColor     = UIColor.whiteColor()
         self.appLinkBtn.layer.cornerRadius  = 25.0
+        self.appLinkBtn.layer.shadowOffset  = CGSize(width: 0, height: 3.0)
+        self.appLinkBtn.layer.shadowRadius  = 3.0
+        self.appLinkBtn.layer.shadowOpacity = 0.4
+        self.appLinkBtn.layer.shadowColor   = UIColor.darkGrayColor().CGColor
+        self.appLinkBtn.layer.masksToBounds = false
+        
+        let attributedString = NSMutableAttributedString(string: self.linkSentHeading.text!)
+        
+        attributedString.addAttribute(NSKernAttributeName, value: CGFloat(1.4), range: NSRange(location: 0, length: 16))
+        self.linkSentHeading.attributedText = attributedString
+        
     }
     
     @IBAction func openMailApp(sender: AnyObject) {

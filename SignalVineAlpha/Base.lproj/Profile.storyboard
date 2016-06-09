@@ -15,7 +15,35 @@
                     <view key="view" contentMode="scaleToFill" id="UTg-Hv-uRt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoH-QD-Zre">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-6k-ZbP">
+                                        <rect key="frame" x="237" y="237" width="127" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="127" id="jgm-b5-uca"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fpL-6k-ZbP" firstAttribute="centerX" secondItem="HoH-QD-Zre" secondAttribute="centerX" id="1tM-kO-oLY"/>
+                                    <constraint firstAttribute="bottom" secondItem="fpL-6k-ZbP" secondAttribute="bottom" constant="342" id="QoS-Ki-FmH"/>
+                                    <constraint firstItem="fpL-6k-ZbP" firstAttribute="top" secondItem="HoH-QD-Zre" secondAttribute="top" constant="237" id="scq-vq-XyA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HoH-QD-Zre" secondAttribute="trailing" id="83m-Zz-Vym"/>
+                            <constraint firstAttribute="bottom" secondItem="HoH-QD-Zre" secondAttribute="bottom" id="Lft-6w-ZNu"/>
+                            <constraint firstItem="HoH-QD-Zre" firstAttribute="leading" secondItem="UTg-Hv-uRt" secondAttribute="leading" id="XKa-PM-XTi"/>
+                            <constraint firstItem="HoH-QD-Zre" firstAttribute="top" secondItem="UTg-Hv-uRt" secondAttribute="top" id="jvM-LV-znu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uWL-qU-98c"/>
                 </viewController>
@@ -23,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1789" y="412"/>
         </scene>
-        <!--Custom Navigation Controller-->
+        <!--Navigation View-->
         <scene sceneID="RzA-Fk-k1a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gtf-aj-Dcj" customClass="CustomNavigationController" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gtf-aj-Dcj" customClass="NavigationView" customModule="SignalVineAlpha" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="" image="user-icon" selectedImage="user-icon" id="z3e-fR-b04">
                         <inset key="imageInsets" minX="0.0" minY="3" maxX="2" maxY="-1"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>

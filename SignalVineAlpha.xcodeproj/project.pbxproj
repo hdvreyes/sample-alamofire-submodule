@@ -15,7 +15,6 @@
 		A7A966CB1D07AA0800ED55D4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966C91D07AA0800ED55D4 /* Home.storyboard */; };
 		A7A966D31D07AA1F00ED55D4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D21D07AA1F00ED55D4 /* Search.storyboard */; };
 		A7A966D61D07ACEA00ED55D4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D41D07ACEA00ED55D4 /* Profile.storyboard */; };
-		A7A966D81D07C09300ED55D4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */; };
 		A7A966DA1D07D14200ED55D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966D91D07D14200ED55D4 /* HomeViewController.swift */; };
 		A7A966DC1D07D24000ED55D4 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966DB1D07D24000ED55D4 /* NavigationView.swift */; };
 		A7A966DE1D07E0C400ED55D4 /* RequestForLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */; };
@@ -131,7 +130,6 @@
 		A7A966CA1D07AA0800ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		A7A966D21D07AA1F00ED55D4 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		A7A966D51D07ACEA00ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
-		A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		A7A966D91D07D14200ED55D4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A7A966DB1D07D24000ED55D4 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestForLink.swift; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 			children = (
 				A7AEE3961D053B92000DB0EF /* LoginViewController.swift */,
 				A7AEE39E1D054BF0000DB0EF /* MainViewController.swift */,
-				A7A966D71D07C09300ED55D4 /* CustomNavigationController.swift */,
 				A7A966D91D07D14200ED55D4 /* HomeViewController.swift */,
 				A7A966DD1D07E0C400ED55D4 /* RequestForLink.swift */,
 				A7AAD8C01D08DC2B00508838 /* LinkSentViewController.swift */,
@@ -495,7 +492,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A966D81D07C09300ED55D4 /* CustomNavigationController.swift in Sources */,
 				A73C5B471D065BB300F18786 /* RequestsClass.swift in Sources */,
 				A7AEE39F1D054BF0000DB0EF /* MainViewController.swift in Sources */,
 				A7AEE35A1D05247A000DB0EF /* ViewController.swift in Sources */,

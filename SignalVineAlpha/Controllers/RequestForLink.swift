@@ -29,8 +29,11 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
         self.requestBtn.backgroundColor = UIColor.whiteColor()
         self.requestBtn.layer.cornerRadius = 25.0
         self.requestBtn.clipsToBounds = true
-        self.requestBtn.layer.shadowOffset = CGSize(width: 5, height: 5)
+        self.requestBtn.layer.shadowOffset = CGSize(width: 0, height: 3.0)
         self.requestBtn.layer.shadowRadius = 3.0
+        self.requestBtn.layer.shadowOpacity = 0.4
+        self.requestBtn.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        self.requestBtn.layer.masksToBounds = false
         
         // This block will determines if keyboard is displayed
         self.keyboardListener()
@@ -119,3 +122,4 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
     */
 
 }
+
