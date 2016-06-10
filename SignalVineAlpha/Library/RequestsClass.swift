@@ -31,9 +31,12 @@ class RequestsClass: NSObject {
     
     func sendMagicLinkPost(email:String){
         
-        let parameters = ["email": email]
+        let postData = ["magic_link": ["email": email]]
         
-        Alamofire.request(.POST, "https://httpbin.org/post", parameters: parameters)
+        //let headers = ["csrf-param" : "authenticity_token", "csrf-token": ""]
+        
+        //https://signalvine-magiclink-demo.appexpress.io/magic_links/magic_links
+        Alamofire.request(.POST, "https://signalvine-magiclink-demo.appexpress.io/magic_links/", parameters: postData)
             .responseJSON{ response in
                 
                 print(response.request)

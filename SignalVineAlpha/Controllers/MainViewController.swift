@@ -23,6 +23,8 @@ class MainViewController: UITabBarController {
         //tabBar.barTintColor = UIColor.redColor()
         self.tabBarItem = UITabBarItem(title: "Test", image: UIImage(named: "message-icon"), tag:1)
 //        print(self.tabBarItem.tag)
+        UIApplication.sharedApplication().statusBarStyle = .Default
+
     }
     
     override func didReceiveMemoryWarning() {

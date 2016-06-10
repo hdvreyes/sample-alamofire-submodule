@@ -16,7 +16,8 @@ class LinkSentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+ 
         self.bodyContainer.backgroundColor = UIColor(patternImage: UIImage(named: "image-pattern")!)
         // Sets the button property
         self.appLinkBtn.backgroundColor     = UIColor.whiteColor()

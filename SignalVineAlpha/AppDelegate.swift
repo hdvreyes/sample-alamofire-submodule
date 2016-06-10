@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        //
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         // Sets the window bounds to make sure the xibs is in full screen
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
@@ -43,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             //linkSentView
             //requestForLink
-            initialViewController = login.instantiateViewControllerWithIdentifier("linkSentView")
+            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
         }
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
@@ -108,6 +111,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+//    private func
+//    
+//    private func screenLoad()
+//    {
+//    
+//    }
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
