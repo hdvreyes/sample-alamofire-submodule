@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Do validation here
         let loggedIn = false
         
-        //Do handshake
+        //Do handshake class
         urlRequests.signalvineHandshake()
 
         
