@@ -11,7 +11,7 @@ import CoreData
 import Alamofire
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UAlertClassView {
 
     var window: UIWindow?
     var globalToken: String?
@@ -29,10 +29,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Do validation here
         let loggedIn = false
-        
         //Do handshake class
-        urlRequests.signalvineHandshake()
+        urlRequests.signalvineHandshake("Hello"){ (status:Bool, errCode:String) in
+            print(status)
+            print("\(errCode)")
+            let h = LibraryAPI.sharedInstance.messageResponseFromUrlCode(201)
+            print(h.title)
+            print(h.message)
+            
+        }
 
+        LibraryAPI.sharedInstance.addUserData("1277123671239723", keyname: "secret")
+        
+        print(LibraryAPI.sharedInstance.getUserDetails("name"))
+        print(LibraryAPI.sharedInstance.getUserDetails("key"))
+        print(LibraryAPI.sharedInstance.getUserDetails("secret"))
         
         // Set which storyboard to load - get main storyboard name
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -46,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             //linkSentView
             //requestForLink
-            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
+            initialViewController = login.instantiateViewControllerWithIdentifier("linkSentView")
         }
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
@@ -62,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let loggedIn = true
         
         //Do handshake
-        urlRequests.signalvineHandshake()
+        //urlRequests.signalvineHandshake()
         
         
         // Set which storyboard to load - get main storyboard name
@@ -103,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             //linkSentView
             //requestForLink
-            initialViewController = login.instantiateViewControllerWithIdentifier("requestForLink")
+            initialViewController = login.instantiateViewControllerWithIdentifier("linkSentView")
         }
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()

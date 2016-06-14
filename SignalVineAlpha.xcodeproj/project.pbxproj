@@ -12,6 +12,8 @@
 		A73C5B4E1D065DFD00F18786 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A73C5B341D0657E600F18786 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */; };
 		A73C5B571D066DF000F18786 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A73C5B561D066DF000F18786 /* Login.storyboard */; };
+		A799418F1D0E47740053FBDE /* ErrorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A799418E1D0E47740053FBDE /* ErrorClass.swift */; };
+		A79941971D0E68B20053FBDE /* UAlertClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79941961D0E68B20053FBDE /* UAlertClassView.swift */; };
 		A7A966CB1D07AA0800ED55D4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966C91D07AA0800ED55D4 /* Home.storyboard */; };
 		A7A966D31D07AA1F00ED55D4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D21D07AA1F00ED55D4 /* Search.storyboard */; };
 		A7A966D61D07ACEA00ED55D4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A966D41D07ACEA00ED55D4 /* Profile.storyboard */; };
@@ -128,6 +130,8 @@
 		A73C5B531D06698D00F18786 /* SignalVineAlpha-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignalVineAlpha-Bridging-Header.h"; sourceTree = "<group>"; };
 		A73C5B541D06698E00F18786 /* ObjectiveBridgeHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveBridgeHeader.m; sourceTree = "<group>"; };
 		A73C5B561D066DF000F18786 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A799418E1D0E47740053FBDE /* ErrorClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorClass.swift; sourceTree = "<group>"; };
+		A79941961D0E68B20053FBDE /* UAlertClassView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UAlertClassView.swift; sourceTree = "<group>"; };
 		A7A966CA1D07AA0800ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		A7A966D21D07AA1F00ED55D4 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		A7A966D51D07ACEA00ED55D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
@@ -265,8 +269,10 @@
 				A73C5B291D0657E600F18786 /* Alamofire.xcodeproj */,
 				A7AEE3931D0529DC000DB0EF /* LoginValidationClass.swift */,
 				A73C5B461D065BB300F18786 /* RequestsClass.swift */,
+				A799418E1D0E47740053FBDE /* ErrorClass.swift */,
 				A7F4E9291D067C3A00B57B70 /* UIClass.swift */,
 				A7AEC1771D0A7D8D0002ED26 /* LibraryAPI.swift */,
+				A79941961D0E68B20053FBDE /* UAlertClassView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -369,7 +375,7 @@
 				TargetAttributes = {
 					A7AEE3531D05247A000DB0EF = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = H29N4FZTG9;
+						DevelopmentTeam = 5J9LYDJZDF;
 					};
 					A7AEE36A1D05247A000DB0EF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -503,9 +509,11 @@
 				A7AEE3601D05247A000DB0EF /* SignalVineAlpha.xcdatamodeld in Sources */,
 				A7F4E92A1D067C3A00B57B70 /* UIClass.swift in Sources */,
 				A73C5B551D06698E00F18786 /* ObjectiveBridgeHeader.m in Sources */,
+				A79941971D0E68B20053FBDE /* UAlertClassView.swift in Sources */,
 				A7A966DC1D07D24000ED55D4 /* NavigationView.swift in Sources */,
 				A7AEE39A1D053B92000DB0EF /* LoginViewController.swift in Sources */,
 				A7AEE3941D0529DC000DB0EF /* LoginValidationClass.swift in Sources */,
+				A799418F1D0E47740053FBDE /* ErrorClass.swift in Sources */,
 				A7AEC1781D0A7D8D0002ED26 /* LibraryAPI.swift in Sources */,
 				A7A966DA1D07D14200ED55D4 /* HomeViewController.swift in Sources */,
 				A7A966DE1D07E0C400ED55D4 /* RequestForLink.swift in Sources */,
@@ -681,11 +689,12 @@
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.DemoSignalVine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.DemoLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SignalVineAlpha/SignalVineAlpha-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -700,10 +709,11 @@
 				INFOPLIST_FILE = SignalVineAlpha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.DemoSignalVine;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aelogica.DemoLink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SignalVineAlpha/SignalVineAlpha-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

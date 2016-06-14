@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //Alamofire.request(.GET, "https://httpbin.org/get")
-        urlRequests.signalvineHandshake()
+        //urlRequests.signalvineHandshake()
     }
 
     @IBAction func validateUser(sender: AnyObject) {

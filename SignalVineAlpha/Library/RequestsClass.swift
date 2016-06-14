@@ -14,36 +14,38 @@ import Alamofire
 class RequestsClass: NSObject {
 
     
-    func signalvineHandshake(){
+    func signalvineHandshake(email:String, completion:(status:Bool, errCode: String)->Void){
         
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
                  .responseJSON{ response in
-            
-                    print(response.request)
-                    print(response.response)
-                    print(response.data)
-                    print(response.result)
-            
-            
+                    //print(response.request)
+                    //print(response.response)
+                    //print(response.data)
+                    //print(response.result.error)
+                    
+                    if response.result.error != nil{
+                        completion(status: false, errCode: "\(response.response!.statusCode)")
+                    }else{
+                        completion(status: true, errCode: "\(response.response!.statusCode)")
+                    }
             }
         
     }
     
-    func sendMagicLinkPost(email:String){
+    func sendMagicLinkPost(email:String, completion:(status:Bool, errCode:Int)->Void){
         
         let postData = ["magic_link": ["email": email]]
-        
-        //let headers = ["csrf-param" : "authenticity_token", "csrf-token": ""]
-        
         //https://signalvine-magiclink-demo.appexpress.io/magic_links/magic_links
         Alamofire.request(.POST, "https://signalvine-magiclink-demo.appexpress.io/magic_links/", parameters: postData)
             .responseJSON{ response in
-                
-                print(response.request)
-                print(response.response)
-                print(response.data)
-                print(response.result)
-                
+//                print(response.request)
+//                print(response.response)
+//                print(response.data)
+                if response.response!.statusCode != 200{
+                    completion(status: false, errCode: response.response!.statusCode)
+                }else{
+                    completion(status: true, errCode: response.response!.statusCode)
+                }
         }
     }
     

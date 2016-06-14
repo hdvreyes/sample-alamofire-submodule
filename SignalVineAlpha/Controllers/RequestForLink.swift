@@ -19,6 +19,8 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
     
 //    let uiClass = UIClass()
     
+    var activity: UIActivityIndicatorView! = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,41 +41,42 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
         self.keyboardListener()
     }
 
-    private func keyboardListener(){
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(keyboardWillShow(_:)), name:UIKeyboardDidShowNotification, object:nil)
-        let dismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(keyboardWillHide))
-        self.view.addGestureRecognizer(dismissKeyboard)
-    }
     
-    
+    // This is triggered by the send out button
     @IBAction func sendOutRequest(sender: AnyObject) {
         
+        // Take the email on the textField
         let email = emailField.text
         
-        // Checks for valid email - HMMMMM, i think i made some redundancy here.
+        // Pass thru regex for email validity
         if (self.validateEmail(email!) != false) {
             
-            let requestClass = RequestsClass()
-            requestClass.sendMagicLinkPost(email!)
-            print("Here")
-            let linkSentView = UIStoryboard(name:"Login", bundle: nil).instantiateViewControllerWithIdentifier("linkSentView") 
+            // Let's disable the button and load the activity indicator
+            self.disableButton()
             
-            print(linkSentView)
-            //self.navigationController?.presentViewController(linkSentView, animated: true, completion: nil)
-            self.presentViewController(linkSentView, animated: true, completion: nil)
-            //self.navigationController?.pushViewController(linkSentView, animated: true)
+            // Call on sharedInstance to pass on the RequestClass - this class will initialize the Alamofire library
+            LibraryAPI.sharedInstance.sendMagicLink(email!){ (status:Bool, errCode:Int) in
+                
+                // When the API call is done lets enable the button again
+                self.enableButton()
+                
+                // IF Status returns TRUE present new view controller
+                if status {
+
+                    let linkSentView = UIStoryboard(name:"Login", bundle: nil).instantiateViewControllerWithIdentifier("linkSentView")
+                    self.presentViewController(linkSentView, animated: true, completion: nil)
+                }else{
+                    //If status is false, I should create a shared instance for all the possible error return this will make everything in once place for easy debugging!
+                    // Do an alert here
+                    let alertResp = LibraryAPI.sharedInstance.messageResponseFromUrlCode(errCode)
+                    self.showAlert(alertResp.title, alertMessage: alertResp.message)
+                    
+                }
+            }
         }else{
-            self.showAlert("Awe!", alertMessage: "That's not a valid email address!")
+            self.showAlert("Oops!", alertMessage: "That's not a valid email address!")
         }
     }
-    
-    private func validateEmail(email: String) -> Bool?{
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluateWithObject(email)
-    }
-    
     
     func keyboardWillShow(sender: NSNotification){
         if !isKeyboardUp {
@@ -97,20 +100,12 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
         isKeyboardUp = false
     }
     
-    private func showAlert(alertTitle: String, alertMessage: String){
-        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
-        let defaultAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
-        alert.addAction(defaultAction)
-        presentViewController(alert, animated: true, completion: nil)
-        
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -123,3 +118,46 @@ class RequestForLink: UIViewController, UITextFieldDelegate {
 
 }
 
+
+// Creating an extension will segragate private functions with public ones
+private extension RequestForLink{
+    
+    private func keyboardListener(){
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(keyboardWillShow(_:)), name:UIKeyboardDidShowNotification, object:nil)
+        let dismissKeyboard = UITapGestureRecognizer(target: self, action: #selector(keyboardWillHide))
+        self.view.addGestureRecognizer(dismissKeyboard)
+    }
+    
+    private func showAlert(alertTitle: String, alertMessage: String){
+        let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .Alert)
+        let defaultAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alert.addAction(defaultAction)
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    private func validateEmail(email: String) -> Bool?{
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluateWithObject(email)
+    }
+
+
+    private func enableButton(){
+        self.requestBtn.enabled = true
+        self.requestBtn.setTitle("SEND MAGIC LINK", forState: .Normal)
+        self.activity.stopAnimating()
+        self.activity.removeFromSuperview()
+    }
+    
+    private func disableButton(){
+        self.requestBtn.enabled     = false
+        self.requestBtn.setTitle("", forState: .Normal)
+        self.activity = UIActivityIndicatorView(activityIndicatorStyle:.WhiteLarge)
+        self.activity.color = UIColor.grayColor()
+        self.activity.frame = CGRectMake((self.view.frame.width / 2) - 20 , (self.requestBtn.frame.height / 2) - 10, 20, 20)
+        self.activity.startAnimating()
+        self.requestBtn.addSubview(activity)
+    }
+}
