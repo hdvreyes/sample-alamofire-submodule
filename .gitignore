@@ -1,1 +1,5 @@
+#Need to ignore this to avoid fle collision in the future
 .DS_Store
+*.xcuserstate
+#project.xcworkspace/
+xcuserdata/
